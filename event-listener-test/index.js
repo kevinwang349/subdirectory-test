@@ -8,7 +8,7 @@ function init(){
         const option=document.createElement('option');
         option.innerHTML=value;
         option.setAttribute('value',value);
-        option.addEventListener('click', dropdownSubmit(value));
+        option.addEventListener('click', dropdownSubmit);
         dropdown.appendChild(option);
     }
     document.body.appendChild(dropdown);
